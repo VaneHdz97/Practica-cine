@@ -22,7 +22,7 @@ header {
 }
 header img{
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
@@ -36,16 +36,15 @@ fieldset {
     background-color: #d0ade2;
     border: 1px solid #cccccc;
     border-radius: 5px;
-    margin: 20px auto 20px auto;
+    margin: 10px auto 10px auto;
     padding: 20px;
-    width: 70px;
-    max-width: 400px;
+    
 }
 
 /*Estilos secciones*/
 .datos-personales, 
 .entradas {
-    display: grid;
+    display: flexbox;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;   
@@ -96,17 +95,16 @@ button[type="submit"]:hover {
 /*Vista tablet*/
 @media (min-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-
     .datos-personales,
     .entradas {
         grid-template-columns: 1fr 1fr;
     }
-
     .nombre, .correo, .telefono, .zona, .entradas label, .entradas input {
         grid-column: span 2;
     }
+    
 }
   /*Escritorio*/
   @media (min-width: 900px) {

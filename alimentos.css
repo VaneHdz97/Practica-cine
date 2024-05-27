@@ -52,6 +52,7 @@ a:active{
     flex-wrap: wrap; /*Permite que los elementos se ajusten en pantallas más peqieñas*/
     justify-content: space-between; /*Espaciado entre elementos*/
     text-align: center;
+    align-content: space-between;/*Espacio igual entre lineas*/
 }
 .food-item {
     background: #f03030;
